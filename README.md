@@ -25,13 +25,27 @@
     * createdb casting_agency
     * psql casting_agency < casting_agency.psql
     * python test_app.py
+* Deploy to Heroku
+    * brew tap heroku/brew && brew install heroku && pip install gunicorn
+    * heroku login
+    * pip freeze > requirements.txt
+    * touch Procfile, add web: gunicorn app:app
+    * git init
+    * heroku create casting-agency-yinxiaoli
+    * heroku addons:create heroku-postgresql:hobby-dev --app casting-agency-yinxiaoli
+    * heroku config --app casting-agency-yinxiaoli
+    * heroku git:remote -a casting-agency-yinxiaoli
+    * git add, git commit
+    * git push heroku master
+* Heroku URL
+    * https://casting-agency-yinxiaoli.herokuapp.com/
+
 
 ## Motivation
 
 The Casting Agency models a company that is responsible for creating movies and managing and assigning actors to those movies. I am an Executive Producer within the company and are creating a system to simplify and streamline the process.
 
 This is the Capstone Project of Udacity Full Stack Nanodegree.
-
 
 ## API
 
