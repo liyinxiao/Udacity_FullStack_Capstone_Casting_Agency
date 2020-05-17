@@ -26,6 +26,12 @@
     * psql casting_agency < casting_agency.psql
     * python test_app.py
 
+## Motivation
+
+The Casting Agency models a company that is responsible for creating movies and managing and assigning actors to those movies. I am an Executive Producer within the company and are creating a system to simplify and streamline the process.
+
+This is the Capstone Project of Udacity Full Stack Nanodegree.
+
 
 ## API
 
